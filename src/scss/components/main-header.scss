@@ -1,0 +1,42 @@
+
+    header{
+        max-width: 1920px;
+        padding: 20px 160px;
+        background: #FFFF;
+        display: flex;
+        flex-direction:row;
+        height: 80px;
+        align-items: center;
+        padding-bottom: 10px;
+            .logo{
+                height: 50px;
+                width: 100px;
+                margin: 0 320px 0 20px;
+                }
+            nav{
+                font-family: Avenir Next;
+                font-weight: 600;
+                align-self: flex-end;
+                font-size: 12px;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: space-between;
+                color: #384496;
+                margin: 0  20px 20px;
+                a{
+                    margin: 0 20px;
+                }
+                .active{
+                    color: #E7664D;
+                }
+            }
+            .social_icons{
+                display: flex;
+                justify-content: space-between;
+                align-self: flex-end;
+                margin: 0 20px;
+                svg{
+                    margin: 0px 0px 15px 10px;
+                }   
+            }
+        }

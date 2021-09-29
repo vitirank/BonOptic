@@ -1,0 +1,253 @@
+@import "./reset.scss";
+@import "./components/main-header.scss";
+@import "./variabels.scss";
+@import "mixins.scss";
+
+
+
+
+
+
+
+
+
+
+
+body{
+    .content{
+        max-width: 1920px;
+        padding: 40px 160px;
+    }
+    button{
+        border: 5px solid;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Avenir-Roman;;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 5px 30px;
+        width: 300px;
+        height: 50px;
+    }
+    a{
+        &:hover{
+            color: #E7664D;
+        }
+    }
+    svg:hover{
+        fill:#E7664D;
+    }
+    
+    .book_appointment{
+        background: #384496;
+        h2{
+            color: #FFFFFF;
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .family_pic{
+                width: 45%;
+                position: relative;
+                img{ 
+                      
+                    display: block;
+                    width: 100%;
+                    filter:grayscale(1);
+                }
+            }
+            .text_about{
+                width: 45%;
+                line-height: 1.6;
+                p{
+                    font-family: Avenir-Roman;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                }
+                em{
+                    color: #E7664D;
+                    font-size: 30px;
+                    font-weight: lighter;
+                    font-style: italic;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                button{
+                    background: #FFFFFF;
+                    border-color: #FFFFFF;
+                    color: #384496;
+                    margin-top: 10px;
+                }  
+            }
+        }
+    }
+
+    .our_service{
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h2{
+            color: #384496;
+        }
+        article{
+            width: 45%;
+        }
+        img{
+            max-width: 100%;
+        }
+        li{
+            font-family: Avenir-Roman;
+            font-size: 15px;
+            margin:30px 0;
+            display: block;
+            position: relative;
+            text-transform: uppercase;
+            &:before{
+                position: absolute;
+                margin: -5px -40px;
+                content: "";
+                left:0;
+                top: 5px;
+                height: 10px;
+                width: 10px;
+                background: #E7664D;
+                border-radius: 50%;
+            }
+        }
+        button{
+            background: #384496;
+            border-color: #384496;
+            color: #FFFFFF;
+        }
+    }
+
+    .our_doctors{
+        background: #31313B10;
+        h2{
+            color: #384496;
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .specialist{
+            display: flex;
+            flex-direction: column;
+            max-width: 30%;
+            &:hover{
+                transform: scale(1.1); 
+            }
+        }
+        img{
+            display: block;
+            width: 100%;
+            filter:grayscale(1);
+            &:hover{
+                filter: none;
+            }
+        }
+        .doctor-name{
+            font-size: 18px;
+            color: #384496;
+            font-family: "Montserrat",Helvetica,Arial,sans-serif;
+            text-transform: capitalize;
+        }
+        .doctor-text{
+            font-family: Avenir-Roman;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                left:0;
+                top: 5px;
+                height: 1px;
+                width: 50%;
+                background: #31313B
+            }
+        }
+    }
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            color: #384496;
+        }
+        div{
+            font-family: Cormorant Infant;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+
+    footer{
+        background: #384496;
+        color: #FFFFFF;
+        .details{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        button{
+            color: #384496;
+            background: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+    }
+    .map{
+        display: flex;
+        max-width: 100%;
+    }
+    .contact-form{
+        h2{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#384496;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button{
+            background: #384496;
+            color: #FFFFFF;
+        }
+    }
+    .history{
+        background: #384496;
+        font-size: 20px;
+        color: #FFFFFF;
+
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    .doctors{
+        h2{
+            color: #384496;
+        }
+        .specialist{
+            display: flex;
+            direction: row;
+            justify-content: space-between;
+            article{
+                width: 45%;
+            }
+        img{
+            max-width: 100%;
+        }
+        p{
+            font-family: Avenir-Roman;
+            font-size: 20px;
+        }
+        }
+    }
+}
+
+  @font-face {
+    font-family: 'Avenir-Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: url(/src/AvenirLTStd-Roman.woff2) format('woff2'), url(/src/newsreader_regular.woff) format('woff');
+  }
